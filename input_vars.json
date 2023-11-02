@@ -1,19 +1,29 @@
 {
-  "sessions": 2,
+  "sessions": 10,
   "index_start": 100,
-  "bfd_minimum_interval": 300,
-  "bfd_multiplier": 4,
-  "ospf_process": 2,
   "VRF_PREFIX": "BLUE",
+
+  "bfd_minimum_interval": 300,
+  "bfd_max_interval": 300,
+  "bfd_multiplier": 4,
+
+  "ospf_process": 2,
+  
   "supernet_iosxe_fw": "10.41.0.0/16",
   "supernet_iosxr_fw": "10.42.0.0/16",
-  "bgp_asn_xr": 65300,
   "supernet_loopback_xr": "10.30.42.0/24",
+  "supernet_loopback_xe": "10.30.41.0/24",
+
+  "bgp_asn_xr": 65300,
   "bgp_asn_xe": 65321,
+
   "interface_type_xe": "GigabitEthernet",
   "interface_id_xe": "0/0/5",
-  "supernet_loopback_xe": "10.30.41.0/24",
+  
   "interface_type_ftd": "Ethernet",
   "interface_id_ftd_xe": "1/7",
-  "interface_id_ftd_xr": "1/8"
+  "interface_id_ftd_xr": "1/8",
+
+  "interface_type_xr": "TenGigE",
+  "interface_id_xr": "0/0/0/3"
 }

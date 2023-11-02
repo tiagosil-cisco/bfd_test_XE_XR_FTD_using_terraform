@@ -1,0 +1,2 @@
+router static vrf BLUE100 address-family ipv4 unicast 10.30.41.100/32 10.42.100.2
+

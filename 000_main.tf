@@ -1,5 +1,5 @@
 terraform {
-
+  required_version = "< 1.6.0"
   required_providers {
     iosxe = {
       source = "CiscoDevNet/iosxe"
@@ -25,6 +25,7 @@ provider "iosxr" {
   username = "cisco"
   password = "C1sco123"
   host     = "10.30.0.2:57344"
+  tls      = false
 }
 
 provider "fmc" {

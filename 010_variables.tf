@@ -1,4 +1,5 @@
 locals {
+
   sessions             = 2
   index_start          = 100
   bfd_minimum_interval = 300
@@ -26,14 +27,14 @@ locals {
   interface_id_ftd_xe = "1/7"
   interface_id_ftd_xr = "1/8"
 
-routers = [
+  routers = [
     {
       name = "ROUTER-1"
-      host  = "10.1.1.1"
+      host = "10.1.1.1"
     },
     {
       name = "ROUTER-2"
-      host  = "10.1.1.2"
+      host = "10.1.1.2"
     },
   ]
 

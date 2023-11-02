@@ -1,0 +1,4 @@
+terraform state rm 'module.fmc.fmc_device_subinterfaces.side_xe[0]'
+terraform state rm 'module.fmc.fmc_device_subinterfaces.side_xr[0]'
+terraform state rm 'module.fmc.fmc_staticIPv4_route.to_iosxr[0]'
+terraform state rm 'module.fmc.fmc_staticIPv4_route.to_iosxe[0]'
