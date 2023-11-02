@@ -1,4 +1,5 @@
 resource "iosxe_static_route_vrf" "static" {
+  depends_on     = [iosxe_vrf.VRFs]
   count = local.json_input.sessions
   vrf   = "${local.json_input.VRF_PREFIX}${count.index + local.json_input.index_start}"
   routes = [
