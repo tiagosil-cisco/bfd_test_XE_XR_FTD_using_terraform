@@ -24,7 +24,7 @@ provider "iosxe" {
 provider "iosxr" {
   username = "cisco"
   password = "C1sco123"
-  host     = "10.30.0.2:57344"
+  host     = "10.30.1.2:57344"
   tls      = false
 }
 

@@ -1,10 +1,10 @@
 {
-  "sessions": 40,
+  "sessions": 80,
   "index_start": 100,
   "VRF_PREFIX": "BLUE",
 
-  "bfd_minimum_interval": 300,
-  "bfd_max_interval": 300,
+  "bfd_minimum_interval": 50,
+  "bfd_max_interval": 50,
   "bfd_multiplier": 4,
 
   "ospf_process": 2,

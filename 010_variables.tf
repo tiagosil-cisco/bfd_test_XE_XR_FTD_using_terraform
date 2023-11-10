@@ -2,7 +2,7 @@ locals {
 
   sessions             = 2
   index_start          = 100
-  bfd_minimum_interval = 300
+  bfd_minimum_interval = 50
   bfd_multiplier       = 4
   ospf_process         = 2
 

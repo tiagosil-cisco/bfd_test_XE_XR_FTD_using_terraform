@@ -11,8 +11,8 @@ resource "fmc_device_subinterfaces" "side_xe" {
   mtu              = 1500
   enabled          = true
   mode             = "NONE"
-  //ipv4_static_address = cidrhost(cidrsubnet(local.json_input.supernet_iosxe_fw, 8, count.index + local.json_input.index_start), 2)
-  //ipv4_static_netmask = 24
+  ipv4_static_address = cidrhost(cidrsubnet(local.json_input.supernet_iosxe_fw, 8, count.index + local.json_input.index_start), 2)
+  ipv4_static_netmask = 24
 
 }
 
@@ -29,7 +29,7 @@ resource "fmc_device_subinterfaces" "side_xr" {
   mtu              = 1500
   enabled          = true
   mode             = "NONE"
-  //ipv4_static_address = cidrhost(cidrsubnet(local.json_input.supernet_iosxr_fw, 8, count.index + local.json_input.index_start), 2)
-  //ipv4_static_netmask = 24
+  ipv4_static_address = cidrhost(cidrsubnet(local.json_input.supernet_iosxr_fw, 8, count.index + local.json_input.index_start), 2)
+  ipv4_static_netmask = 24
 
 }
